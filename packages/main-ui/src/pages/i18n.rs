@@ -1,230 +1,73 @@
 use dioxus_translate::*;
 
 translate! {
-    HeaderTranslate;
-
-    history: {
-        ko: "HISTORY",
-        en: "HISTORY",
-    },
-    event: {
-        ko: "EVENT",
-        en: "EVENT",
-    },
-    shop: {
-        ko: "SHOP",
-        en: "SHOP",
-    },
-    my_nfts: {
-        ko: "MY NFTs",
-        en: "MY NFTs",
-    },
-    info: {
-        ko: "INFO",
-        en: "INFO",
-    },
-
-    // History submenus
-    notice: {
-        ko: "NOTICE",
-        en: "NOTICE",
-    },
-    story: {
-        ko: "STORY",
-        en: "STORY",
-    },
-    microverse: {
-        ko: "MICROVERSE",
-        en: "MICROVERSE",
-    },
-    top_contributor: {
-        ko: "TOP CONTRIBUTOR",
-        en: "TOP CONTRIBUTOR",
-    },
-
-    // Event submenus
-    calendar: {
-        ko: "CALENDAR",
-        en: "CALENDAR",
-    },
-    contest_voting: {
-        ko: "CONTEST VOTING",
-        en: "CONTEST VOTING",
-    },
-
-    // Info submenus
-    faq: {
-        ko: "FAQ",
-        en: "FAQ",
-    },
-    docs: {
-        ko: "DOCS",
-        en: "DOCS",
-    },
-
-    lang: {
-        ko: "KOR",
-        en: "ENG",
-    },
-}
-
-translate! {
-    FooterTranslate;
-
-    address: {
-        ko: "21554 인천광역시 남동구 정각로 29(구월동) TEL:(032)120",
-        en: "29, Jeongak-ro, Namdong-gu, Incheon, Republic of Korea TEL: +82(032)120",
-    },
-    copyright: {
-        ko: "© Incheon Metropolitan City. All rights reserved.",
-        en: "© Incheon Metropolitan City. All rights reserved.",
-    },
-}
-
-translate! {
-    MainTextTranslate;
+    RootLayoutTranslate;
 
     title: {
-        ko: "인천 히어로즈",
-        en: "INCHEON HEROES",
-    },
-    main_text: {
-        ko: "도시 최초의 글로벌 NFT 프로젝트: 블록체인 도시 인천의 지구지키기에 동참해 주세요!",
-        en: "Championing a Global First: Incheon City's Landmark NFT Project on a Mission to Safeguard the Earth from Climate Change",
-    },
+        en: "DUNNING",
+    }
 }
-
 translate! {
-    LoginButtonTranslate;
-
-    button_text: {
-        ko: "로그인 먼저 해주세요",
-        en: "Please sign in first",
-    },
-}
-
-translate! {
-    LeaderBoardTranslate;
+    HomeTranslate;
 
     title: {
-        ko: "Leader Board",
-        en: "Leader Board",
+        en: "DUNNING",
     },
 
-    menu_level_rank: {
-        ko: "레벨 랭킹",
-        en: "Level Ranking",
-    },
+    description: {
+        en: "DUNNINGRUN is a mobile running app that converts your runs and burned calories into blockchain-based tokens for donations, offering transparent tracking and AI-powered personalized recommendations.",
+    }
 
-    menu_exp_rank: {
-        ko: "경험치 랭킹",
-        en: "Experience Ranking"
-    },
+    d1: {
+        en: "DUNNINGRUN is a mobile running app that",
+    }
+    d2: {
+        en: "converts your runs and burned calories into blockchain-based tokens for donations",
+    }
+    d3: {
+        en: "offering transparent tracking and AI-powered personalized recommendations.",
+    }
 
-    menu_daily_mission_rank: {
-        ko: "데일리 미션 참여 랭킹",
-        en: "Daily Mission Ranking",
-    },
+    slogan_run: {
+        en: "Run",
+    }
 
-    menu_vote_rank: {
-        ko: "검증 투표 참여 랭킹",
-        en: "Voting Ranking",
-    },
-
-}
-
-translate! {
-    LevelBoardTranslate;
-
-    no: {
-        ko: "No.",
-        en: "No."
-    },
-
-    nft_id: {
-        ko: "NFT ID",
-        en: "NFT ID",
-    },
-
-    level: {
-        ko: "레벨",
-        en: "Level",
-    },
-
-    character: {
-        ko: "캐릭터",
-        en: "Character",
-    },
-
-    address: {
-        ko: "계정주소",
-        en: "Account Address",
+    slogan_earn: {
+        en: "Earn",
+    }
+    slogan_give: {
+        en: "Give Back!",
     }
 }
 
 translate! {
-    ExperienceBoardTranslate;
+    ImageSectionTranslate;
 
-    no: {
-        ko: "No.",
-        en: "No."
+    health_title: {
+        en: "Health Improvement",
+    },
+    health_desc: {
+        en: "Supports users in achieving their fitness goals.",
     },
 
-    nft_id: {
-        ko: "NFT ID",
-        en: "NFT ID",
+    social_title: {
+        en: "Social Contribution",
     },
-
-    exp: {
-        ko: "경험치",
-        en: "EXP",
-    },
-
-    character: {
-        ko: "캐릭터",
-        en: "Character",
-    },
-
-    address: {
-        ko: "계정주소",
-        en: "Account Address",
+    social_desc: {
+        en: "Builds trust through transparent blockchain-based donations.",
     }
-}
 
-translate! {
-    MissionBoardTranslate;
-
-    no: {
-        ko: "No.",
-        en: "No."
+    community_title: {
+        en: "Community Engagement",
     },
-
-    missions: {
-        ko: "완료 횟수",
-        en: "No. of Completions",
-    },
-
-    address: {
-        ko: "계정주소",
-        en: "Account Address",
+    community_desc: {
+        en: "Fosters a culture of giving through competition and collaboration.",
     }
-}
 
-translate! {
-    VotingBoardTranslate;
-
-    no: {
-        ko: "No.",
-        en: "No."
+    ai_title: {
+        en: "AI Innovation",
     },
-
-    votes: {
-        ko: "투표 횟수",
-        en: "No. of Votes",
-    },
-
-    address: {
-        ko: "계정주소",
-        en: "Account Address",
+    ai_desc: {
+        en: "Provides personalized workout routes and equipment suggestions",
     }
 }

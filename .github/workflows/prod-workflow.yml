@@ -59,19 +59,9 @@ jobs:
           REGION: ap-northeast-2
           ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          FIREBASE_API_KEY: "${{ secrets.FIREBASE_API_KEY }}"
-          FIREBASE_AUTH_DOMAIN: "${{ secrets.FIREBASE_AUTH_DOMAIN }}"
-          FIREBASE_PROJECT_ID: "${{ secrets.FIREBASE_PROJECT_ID }}"
-          FIREBASE_STORAGE_BUCKET: "${{ secrets.FIREBASE_STORAGE_BUCKET }}"
-          FIREBASE_MESSAGING_SENDER_ID: "${{ secrets.FIREBASE_MESSAGING_SENDER_ID }}"
-          FIREBASE_APP_ID: "${{ secrets.FIREBASE_APP_ID }}"
-          FIREBASE_MEASUREMENT_ID: "${{ secrets.FIREBASE_MEASUREMENT_ID }}"
-          MAIN_API_ENDPOINT: https://api.incheon.world
           ENV: prod
           SERVICE: main-ui
-          DOMAIN: incheonheroes.world
-          KAKAO_CLIENT_ID: 376264d68e7b4ad09d856a757f1b0ce7
-          KAKAO_REDIRECT_URI: https://incheonheroes.world/oauth/kakao
+          DOMAIN: dunning.im
           API_PREFIX: /api
           ENABLE_S3: true
           ENABLE_FARGATE: false

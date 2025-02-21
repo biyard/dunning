@@ -16,7 +16,7 @@ dioxus-oauth = { path = "deps/rust-sdk/packages/dioxus-oauth" }
 dioxus-popup = { path = "deps/rust-sdk/packages/dioxus-popup" }
 dioxus-aws = { path = "deps/rust-sdk/packages/dioxus-aws" }
 google-wallet = { path = "deps/rust-sdk/packages/google-wallet" }
-dioxus-translate = { path = "deps/rust-sdk/packages/dioxus-translate", features = ["ko"] }
+dioxus-translate = { path = "deps/rust-sdk/packages/dioxus-translate" }
 dioxus-translate-macro = { path = "deps/rust-sdk/packages/dioxus-translate-macro" }
 dioxus-translate-types = { path = "deps/rust-sdk/packages/dioxus-translate-types" }
 rest-api = { path = "deps/rust-sdk/packages/rest-api" }

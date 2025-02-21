@@ -1,16 +1,11 @@
 // pub mod abi;
-pub mod assets;
-pub mod components;
 pub mod config;
-pub mod models;
 pub mod pages;
 pub mod route;
-pub mod services;
 
 use crate::route::Route;
 use by_components::theme::{CardColorTheme, ColorTheme, TextColorTheme};
 use dioxus::prelude::*;
-use services::{backend_api::BackendApi, klaytn::Klaytn, user_service::UserService};
 
 fn main() {
     dioxus_logger::init(config::log_level()).expect("failed to init logger");
@@ -21,20 +16,18 @@ fn main() {
 
 fn app() -> Element {
     use_context_provider(|| ColorTheme {
-        background: "#E9F2EC",
+        background: "linear-gradient(135deg, #0B0C10, #1F2833)",
         card: CardColorTheme {
             primary: "#F3F7F4",
             ..Default::default()
         },
         text: TextColorTheme {
-            primary: "black",
-            ..Default::default()
+            primary: "#F0F0F0",
+            secondary: "#B0B0B0",
+            disabled: "#707070",
         },
         ..Default::default()
     });
-    Klaytn::init();
-    BackendApi::init();
-    UserService::init();
 
     rsx! {
         document::Meta {
@@ -52,6 +45,11 @@ fn app() -> Element {
             href: "https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Russo+One&display=swap",
             rel: "stylesheet",
         }
+
+        document::Link {
+            href: "https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap",
+            rel: "stylesheet",
+        }
         document::Link {
             href: "https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard.css",
             r#type: "text/css",
@@ -62,7 +60,7 @@ fn app() -> Element {
             href: "https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Color+Emoji&family=Russo+One&display=swap",
             rel: "stylesheet",
         }
-        document::Link { id: "favicon", rel: "icon", href: "{assets::FAVICON}" }
+        document::Link { id: "favicon", rel: "icon", href: asset!("/public/favicon.ico") }
         document::Link { rel: "stylesheet", href: asset!("/public/main.css") }
         document::Link { rel: "stylesheet", href: asset!("/public/tailwind.css") }
 
