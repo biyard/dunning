@@ -1,0 +1,54 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/static/pretendard.css);
+
+* {
+  font-family: Pretendard, sans-serif;
+}
+
+pre {
+  font-family: Pretendard, sans-serif;
+}
+
+@keyframes growWidth {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes growToLeft {
+  0% {
+    width: 0px;
+    left: 100%;
+  }
+  100% {
+    width: 100%;
+    left: 0px;
+  }
+}
+
+.animate-grow-to-left {
+  animation: growToLeft 2s ease-in-out forwards;
+}
+
+.animate-grow {
+  animation: growWidth 2s ease-in-out forwards;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+#shop_item_details {
+ 	a:link { color: #000080; text-decoration: underline }
+}
