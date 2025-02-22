@@ -26,7 +26,7 @@ pub fn HomePage(lang: Language) -> Element {
                 "{tr.description}"
 
             }
-            ImageSection { class: "w-full center", lang }
+            ImageSection { class: "w-full max-w-[1200px] center", lang }
         }
     }
 }
